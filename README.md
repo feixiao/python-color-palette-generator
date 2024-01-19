@@ -2,7 +2,7 @@
 
 A Python based program, which consists of a VLC player instance, that can generate color palettes for a specified number of video frames and ultimately combine them into a final color palette group image. (See the visual example below)
 
-![Screenshot](https://gauracs.me/wp-content/uploads/2020/12/color_palette_generator_frame.jpg)
+
 
 ##### Example of the result image
 ![Screenshot](https://gauracs.me/wp-content/uploads/2020/12/color_palette_generator.jpg)
@@ -11,9 +11,13 @@ A Python based program, which consists of a VLC player instance, that can genera
 
 In order to run this program, several Python packages must be installed first using pip and Homebrew:
 
-```
+```shell
+brew install cartr/qt4/pyqt@4
+brew install cask/sip
+
+conda activate py38
 pip install python-vlc
-brew install pyqt@4
+
 pip install matplotlib
 pip install numpy
 pip install scikit-learn
@@ -25,7 +29,7 @@ pip install opencv-python
 ### Run the program
 
 ```
-python main.py
+python3 main.py
 ```
 
 ## License
